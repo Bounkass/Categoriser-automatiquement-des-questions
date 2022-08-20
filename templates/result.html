@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet"/>
+    <title>Proposition de Tags StackOverflow</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <div class="header-background"></div>
+        <div class="title">
+          <h1>
+            Tags recommandation
+          </h1>
+        </div>
+      </header>
+      <fieldset>
+            <p>
+                <label for='title'>Title of the Query : </label>
+                {{title}}
+                <br>
+                <br>
+                <label for='body'> Descreption: </label>
+                {{body}}
+
+            </p>
+      </fieldset>
+
+          <fieldset>
+            <p>
+
+                <label for='tags_Stack_Overflow'><h4>Tags proposés :</h4></label>
+                {{prediction}}
+            </p>
+          </fieldset>
+
+  </body>
+</html>
