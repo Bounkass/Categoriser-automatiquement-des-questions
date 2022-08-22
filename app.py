@@ -12,16 +12,16 @@ lr_model = joblib.load(path + "final_model.pkl")
 def formulaire():
     return render_template("formula.html")
 
-@app.route('/resultats_tags.html', methods=['GET', 'POST'])
+@app.route('/result.html', methods=['GET', 'POST'])
 def resultats_tags():
-    title=request.form.get['title']
-    body=request.form.get['body']
-    title_cleaned = cleaned_text(title, 'title')
-    body_cleaned = cleaned_text(body, 'body')
-    doc = list(set(title_cleaned)) + " " + list(set(body_cleaned))
-    y_pred = lr_model.predict_proba(doc)
-    tags_prediction = inv_transform(y_pred)
-    return render_template("result.html", body=body, title=title, prediction=tags_prediction)
+    title=request.form['title']
+    body=request.form['body']
+    title_cleaned = sentence_cleaner(title)
+    body_cleaned = sentence_cleaner(body)
+    doc = title_cleaned  + body_cleaned
+    y_pred = lr_model.predict_proba(np.array([doc,]))
+    tags_pred = inv_transform(y_pred)
+    return render_template("result.html", body=body, title=title, tags_prediction=tags_pred)
 
 if __name__ == "__main__":
     app.run(debug=True)
