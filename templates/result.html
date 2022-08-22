@@ -6,33 +6,31 @@
     <title>Proposition de Tags StackOverflow</title>
   </head>
 
-  <body>
+  <body style="background: #000;">
     <div class="content">
       <header>
         <div class="header-background"></div>
         <div class="title">
-          <h1>
-            Tags recommandation
-          </h1>
+         <h1 style="color:red;">
+            Tags Recommandation
+         </h1>
         </div>
       </header>
-      <fieldset>
+          <fieldset style="color:blue;">
+            <legend><h3>Title & description</h3></legend>
             <p>
-                <label for='title'>Title of the Query : </label>
-                {{title}}
+                <label for='title'> Title: </label>
+                <font color="white">{{title}} </font>
                 <br>
-                <br>
-                <label for='body'> Descreption: </label>
-                {{body}}
-
+                <label for='body'> <font color="white"> Query:</font> </label>
+                <font color="white">{{body}} </font>
             </p>
-      </fieldset>
+          </fieldset>
 
-          <fieldset>
+          <fieldset style="color:red;">
+            <legend><h3 style="color:white;">Proposed Tags</h3></legend>
             <p>
-
-                <label for='tags_Stack_Overflow'><h4>Tags proposés :</h4></label>
-                {{prediction}}
+                {{tags_prediction}}
             </p>
           </fieldset>
 
