@@ -1,6 +1,8 @@
 # Projet_V_ML_oc
 Catégorisez automatiquement des questions
-Introduction
+
+Introduction:
+
 Le projet de ce notebook conerne est une réalisation du P5 intitilé "Catégorisez automatiquement des questions". Il est proposé par 
  par Openclassrooms pour le parcours Ingénieur Machine Learning.
 
