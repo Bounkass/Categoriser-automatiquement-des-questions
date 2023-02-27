@@ -8,7 +8,7 @@ Amateur de Stack Overflow, qui vous a souvent sauvé la mise, vous décidez d'ai
 
 ### La mission de ce projet:
 
-- Réaliser le pétraitement des quaestions (documents) issues des données de l'API stackexchange-explorer
+- Réaliser le pétraitement des questions (documents) issues des données de l'API stackexchange-explorer
 - Comparer des approches suppervisées (LR, KNN, SVM, RF, Gboust) et non supervisées (LDA, NMA) avec plusieurs tests de méthodes d'extraction de features. Notamment, 
 - une approche de type bag-of-words, et 3 approches de Word/Sentence Embedding  Word2Vec, BERT et USE.  
 - Développer une API 
